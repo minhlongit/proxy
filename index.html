@@ -12,11 +12,9 @@
 
 <body>
     <div class="wrapper">
-
         <div class="items-border">
             <div class="items-upload">
                 <div class="bg_move">
-                    
                     <i class="fa fa-paw" id="plus" aria-hidden="true"></i>
                     <h1>Mèo Coder</h1>
                 </div>
@@ -25,24 +23,24 @@
 
         <div class="content">
             <div class="upload-border">
-                <div class="upload">
-                    <h3>Drop your files here</h3>
-                    <label for="input-file">
-                        <i class="fa fa-plus plus" id="plus" aria-hidden="true"></i>
-                    </label>
-                    <input type="file" class="d-none" id="input-file" accept=".txt">
+                <div class="files" id="inputFile">
+                    <textarea id="content-input" class="content-target"></textarea>
                 </div>
             </div>
             <div class="multi-button">
+                <button onclick="convert()">Start</button>
                 <button onclick="copy()">Copy</button>
+                <button id="clear">Clear</button>
             </div>
             <div class="files-border">
                 <div class="files" id="files">
-                    <textarea id="content-target"></textarea>
+                    <textarea id="content-target" class="content-target"></textarea>
                 </div>
             </div>
         </div>
+
     </div>
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
 
     <script src="main.js"></script>
 </body>
