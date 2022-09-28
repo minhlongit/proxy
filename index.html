@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="items-border">
+            <div class="items-upload">
+                <div class="bg_move">
+                    
+                    <i class="fa fa-paw" id="plus" aria-hidden="true"></i>
+                    <h1>Mèo Coder</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="upload-border">
+                <div class="upload">
+                    <h3>Drop your files here</h3>
+                    <label for="input-file">
+                        <i class="fa fa-plus plus" id="plus" aria-hidden="true"></i>
+                    </label>
+                    <input type="file" class="d-none" id="input-file" accept=".txt">
+                </div>
+            </div>
+            <div class="multi-button">
+                <button onclick="copy()">Copy</button>
+            </div>
+            <div class="files-border">
+                <div class="files" id="files">
+                    <textarea id="content-target"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
